@@ -40,7 +40,7 @@ import tailwind from '@astrojs/tailwind';
 			  ['FAQ', '/faq'],
 			  ['About', '/about'],
 			].map(([title, url]) => (
-			  <a href={url} class="bg-gray-200 rounded-lg px-3 py-2 text-white font-medium hover:font-bold hover:bg-purple-200 hover:text-purple-600 hover:duration-500">{title}</a>
+			  <a href={url} class="bg-gray-900 rounded-lg px-3 py-2 text-white font-medium hover:font-bold hover:bg-purple-300 hover:text-purple-600 hover:duration-500">{title}</a>
 			))}
 		  </nav>
 		<h1>Welcome to <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">VNGDPS</span></h1>
@@ -66,6 +66,10 @@ import tailwind from '@astrojs/tailwind';
 	<h4 style="text-align: center;" class="opacity-60">VNGDPS with love ❤</h4>
 </Layout>
 <style>
+	h4
+	{
+		color:white;
+	}
 	main {
 		margin: auto;
 		padding: 1rem;

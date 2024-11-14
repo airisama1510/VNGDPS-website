@@ -40,7 +40,7 @@ import tailwind from '@astrojs/tailwind';
 			  ['FAQ', '/faq'],
 			  ['About', '/about'],
 			].map(([title, url]) => (
-			  <a href={url} class="bg-gray-200 rounded-lg px-3 py-2 text-white font-medium hover:font-bold hover:bg-purple-200 hover:text-purple-600 hover:duration-500">{title}</a>
+			  <a href={url} class="bg-gray-900 rounded-lg px-3 py-2 text-white font-medium hover:font-bold hover:bg-purple-300 hover:text-purple-600 hover:duration-500">{title}</a>
 			))}
 		  </nav>
 		<h1><span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">FAQ</span></h1>
@@ -81,7 +81,7 @@ import tailwind from '@astrojs/tailwind';
 			<code>
 				1. Level phải đủ 10s, đã được rate featured trở lên<br>
 				2.  Đẹp và đầu tư về gameplay, độ khó.<br>
-				3. Level phải có chủ đề (ví dụ: chủ đê là lửa sẽ được thêm vào fire gauntlets) và ko phải là layout...<br>
+				3. Level phải có chủ đề (ví dụ: chủ đề là lửa sẽ được thêm vào fire gauntlets) và ko phải là layout...<br>
 			</code>
 		</p>
 		</ul>
@@ -89,6 +89,10 @@ import tailwind from '@astrojs/tailwind';
 	<h4 style="text-align: center;" class="opacity-60">VNGDPS with love ❤</h4>
 </Layout>
 <style>
+	h4
+	{
+		color:white;
+	}
 	main {
 		margin: auto;
 		padding: 1rem;

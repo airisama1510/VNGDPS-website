@@ -33,14 +33,16 @@ import tailwind from '@astrojs/tailwind';
 				</linearGradient>
 			</defs>
 		</svg>
-		<nav class="flex justify-center space-x-1 sm:space-x-4">
+		<nav class="bg-black/50 rounded-lg px-10 flex justify-center space-x-0 sm:space-x-4">
+			<img src="/favicon.png" class="overflow-hidden w-12 rounded-lg">
+			<a href="/home" class="overflow-hidden opacity-0 sm:opacity-100 text-white font-medium py-2">VNGDPS</a>
 			{[
 			  ['Home', '/home'],
 			  ['Download', '/download'],
 			  ['FAQ', '/faq'],
 			  ['About', '/about'],
 			].map(([title, url]) => (
-			  <a href={url} class="bg-gray-900 rounded-lg px-3 py-2 text-white font-medium hover:font-bold hover:bg-purple-300 hover:text-purple-600 hover:duration-500">{title}</a>
+			  <a href={url} class="rounded-lg sm:px-3 px-2 py-2 text-white font-medium hover:font-bold hover:bg-purple-300 hover:text-purple-600 hover:duration-500">{title}</a>
 			))}
 		  </nav>
 		<h1>Download <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">VNGDPS</span></h1>
